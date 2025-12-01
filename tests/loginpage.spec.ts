@@ -1,5 +1,5 @@
 import { LoginPage } from '../pages/LoginPage';
-import { test, expect } from '../fixtures/baseFixtures'
+import { test, expect } from '../fixtures/baseFixtures';
 
 
 test('verify valid login @login',
@@ -20,10 +20,10 @@ test('verify valid login @login',
 
 test('verify Invalid login @wip', async ({ page, baseURL }) => {
     //AAA
-    let loginPage = new LoginPage(page);
+    const loginPage = new LoginPage(page);
     await loginPage.goToLoginPage(baseURL);
     await loginPage.doLogin('abcxyzzz@nal.com', 'test123456');
     const errorMesg = await loginPage.getInvalidLoginMessage();
-    expect(errorMesg).toContain('Warning: No match for E-Mail Address and/or Password.')
+    expect(errorMesg).toContain('Warning: No match for E-Mail Address and/or Password.');
 
 });

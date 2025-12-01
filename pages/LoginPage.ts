@@ -22,7 +22,7 @@ export class LoginPage{
         this.eleUtil = new ElementUtil(page);
         this.emailId = page.getByRole('textbox', { name: 'E-Mail Address' });
         this.pasword = page.getByRole('textbox', { name: 'Password' });
-        this.loginBtn = `input[type="submit"][value="Login"]`;
+        this.loginBtn = 'input[type="submit"][value="Login"]';
         this.warningMsg = page.locator('.alert.alert-danger.alert-dismissible');
         this.registerlink = page.getByText('Register', { exact: true });
     }
