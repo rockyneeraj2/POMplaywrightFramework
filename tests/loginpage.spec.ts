@@ -27,3 +27,9 @@ test('verify Invalid login @wip', async ({ page, baseURL }) => {
     expect(errorMesg).toContain('Warning: No match for E-Mail Address and/or Password.');
 
 });
+
+
+// eslint-disable-next-line no-empty-pattern
+test('sample test @sample', async ({ }) => {
+    expect(10).toBe(10);
+});
