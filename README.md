@@ -1,7 +1,18 @@
 # PWFWDemo Automation Reports
 
-Welcome to the **June2025PWFramework** automation project. Below you can find the latest test results and HTML reports.
-
+Welcome to the **2025PWFramework** automation project. Below you can find the latest test results and HTML reports.
+This repository contains a scalable and maintainable Playwright automation framework built using the Page Object Model (POM) design pattern.
+The framework is designed for UI and API automation, cross-browser execution, and CI/CD readiness.
+The Page Object Model design pattern:
+Separates test logic from UI locators
+Improves code reusability
+Reduces test maintenance cost
+Minimizes test flakiness
+Enables clean and readable test cases
+Each application page is represented by a class that contains:
+Page locators
+Page actions
+Business workflows
 ---
 
 ## Workflow Status
